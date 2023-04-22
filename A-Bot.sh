@@ -17,7 +17,7 @@ if [ -f "$PWD/A-Bot" ]; then
     clear
     echo "${blue}A-Bot is already installed!${normal}"
 else
-    echo "$(wget 'abot-trade.ru/A-Bot')"
+    echo "$(wget 'https://raw.githubusercontent.com/ZaNDeR6663/A-Bot/main/A-Bot')"
     echo "$(chmod 755 'A-Bot')"
     if ! screen -list | grep -q "abot"; then
         echo "$(screen -S abot)"
